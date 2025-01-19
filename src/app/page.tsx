@@ -101,7 +101,7 @@ function TimelineDemo() {
             <div className="flex justify-center">
             {/* Evline image */}
             <Image
-              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/army.png"
+              src="/army.png"
               alt="hero template"
               width={500}
               height={500}
@@ -120,7 +120,7 @@ function TimelineDemo() {
             September - April 2024
           </p>
           <p className="text-white dark:text-white text-lg md:text-sm font-bold mb-4">
-            <a href="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/evline.png" target="_blank" className="hover:text-blue-500">Evline - Backend Software Engineer & ETL Developer</a>
+            <a href="https://my-bio-c0760.web.app//evline.png" target="_blank" className="hover:text-blue-500">Evline - Backend Software Engineer & ETL Developer</a>
           </p>
           <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-6">
             Contributed to server-side development at a Silicon Valley-based company using

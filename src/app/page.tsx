@@ -19,7 +19,7 @@ import { AnimatedTooltip } from "../components/ui/animated-tooltip";
 import { Timeline } from "@/components/ui/timeline";
 
 
-/*const firebaseConfig = {
+const firebaseConfig = {
   apiKey: process.env.APIKEY,
   authDomain: process.env.AUTHDOMAIN,
   projectId: process.env.PROJECTID,
@@ -27,9 +27,7 @@ import { Timeline } from "@/components/ui/timeline";
   messagingSenderId: process.env.MESSAGINGSENDERID,
   appId: process.env.APPID,
   measurementId: process.env.MEASUREMENTID
-};*/
-
-
+};
 
 const app = initializeApp(firebaseConfig);
 //const analytics = getAnalytics(app);
@@ -76,6 +74,7 @@ function HeroScrollDemo() {
           height={720}
           width={1400}
           draggable={false}
+          unoptimized
         /></a>
       </ContainerScroll>
     </div>
@@ -127,16 +126,51 @@ function TimelineDemo() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "2023",
       content: (
         <div>
-          <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+          <p className="text-white dark:text-white text-xs md:text-xl font-bold mb-8">
+            September - April 2024
           </p>
+          <p className="text-white dark:text-white text-lg md:text-sm font-bold mb-4">
+            <a href="https://evline.io/" target="_blank" className="hover:text-blue-500">Evline - Backend Software Engineer & ETL Developer</a>
+          </p>
+          <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-6">
+            Contributed to server-side development at a Silicon Valley-based company using
+            Node.js, NestJS, and TypeScript. Aimed to enhance the scalability and efficiency of
+            backend systems, supporting robustness and high service performance.
+          </p>
+            <div className="flex justify-center">
+            {/* Evline image */}
+            <a target="_blank" href="https://evline.io/"><Image
+              src="/evline.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover w-60 h-20 mde:h-44 lg:h-30 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] mb-12"
+              style={{ objectFit: 'contain' }}
+            /></a>
+            </div>
+
+  
+          <p className="text-white dark:text-white text-xs md:text-xl font-bold mb-8">
+            June - September
+          </p>
+          <p className="text-white dark:text-white text-lg md:text-sm font-bold mb-4">
+            Technology Without Borders - Software Developer Intern
+          </p>
+          <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-24">
+          During the internship, I developed a web application focusing on user-centric
+          features and seamless interaction. I also implemented some data extraction and
+          manipulation strategies, crucial for integrating and optimizing data flow for an
+          improved app performance.
+          </p>
+
+
           <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+            Contributed to server-side development at a Silicon Valley-based company using
+            Node.js, NestJS, and TypeScript. Aimed to enhance the scalability and efficiency of
+            backend systems, supporting robustness and high service performance.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image

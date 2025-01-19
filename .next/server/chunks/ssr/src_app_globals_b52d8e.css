@@ -946,6 +946,10 @@ body {
   height: 1px;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .min-h-\[200vh\] {
   min-height: 200vh;
 }
@@ -2032,6 +2036,14 @@ body {
 @media (width >= 1024px) {
   .lg\:h-60 {
     height: 15rem;
+  }
+
+  .lg\:h-12 {
+    height: 3rem;
+  }
+
+  .lg\:h-24 {
+    height: 6rem;
   }
 
   .lg\:max-w-sm {

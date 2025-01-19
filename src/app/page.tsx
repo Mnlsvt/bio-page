@@ -1,4 +1,7 @@
 "use client";
+import { initializeApp } from "firebase/app";
+//import { getAnalytics } from "firebase/analytics";
+
 import React from "react";
 import { ContainerScroll } from "../components/ui/container-scroll-animation";
 import Image from "next/image";
@@ -13,10 +16,23 @@ import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
 
-
-
 import { Timeline } from "@/components/ui/timeline";
 
+
+/*const firebaseConfig = {
+  apiKey: process.env.APIKEY,
+  authDomain: process.env.AUTHDOMAIN,
+  projectId: process.env.PROJECTID,
+  storageBucket: process.env.STORAGEBUCKET,
+  messagingSenderId: process.env.MESSAGINGSENDERID,
+  appId: process.env.APPID,
+  measurementId: process.env.MEASUREMENTID
+};*/
+
+
+
+const app = initializeApp(firebaseConfig);
+//const analytics = getAnalytics(app);
 
 function LampDemo() {
   return (
@@ -55,7 +71,7 @@ function HeroScrollDemo() {
         }
       >
         <a href="/VETTAS_EMMANOUIL.pdf" target="_blank" className="mx-auto rounded-2xl object-cover h-full object-left-top"><Image
-          src={`/cv-image.png`}
+          src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
           alt="hero"
           height={720}
           width={1400}
@@ -79,28 +95,28 @@ function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="startup template"
               width={500}
               height={500}
@@ -124,28 +140,28 @@ function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="hero template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="feature template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="bento template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="cards template"
               width={500}
               height={500}
@@ -181,28 +197,28 @@ function TimelineDemo() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="hero template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="feature template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="bento template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/cv-image.png"
+              src="https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png"
               alt="cards template"
               width={500}
               height={500}
@@ -238,14 +254,28 @@ const people = [
     name: "Python",
     designation: "",
     image:
-      "/python.png",
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/python.png",
   },
   {
     id: 2,
     name: "JavaScript",
     designation: "",
     image:
-      "/js.png",
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/js.png",
+  },
+  {
+    id: 3,
+    name: "Linux",
+    designation: "",
+    image:
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/linux.png",
+  },
+  {
+    id: 4,
+    name: "Git & Github",
+    designation: "",
+    image:
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/git.png",
   },
 ];
  

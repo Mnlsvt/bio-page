@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "../../lib/utils";
 
@@ -15,7 +15,29 @@ export const TextGenerateEffect = ({
   duration?: number;
 }) => {
   const [scope, animate] = useAnimate();
+  const [textSize, setTextSize] = useState("text-2xl");
   let wordsArray = words.split(" ");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setTextSize("text-m");
+      } else if (window.innerWidth < 768) {
+        setTextSize("text-xl");
+      } else {
+        setTextSize("text-2xl");
+      }
+    };
+
+    // Set initial size and add event listener
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     animate(
       "span",
@@ -53,7 +75,11 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold ml-20 mr-80", className)}>
       <div className="mt-4">
-        <div className="dark:text-white text-black text-2xl leading-snug tracking-wide">
+        <div
+          className={cn(
+            `dark:text-white text-black leading-snug tracking-wide ${textSize}`
+          )}
+        >
           {renderWords()}
         </div>
       </div>

@@ -6,12 +6,14 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "output": "export"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.28.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "firebase": "^11.2.0",
     "framer-motion": "^11.18.1",
     "lucide-react": "^0.473.0",
     "next": "15.1.5",

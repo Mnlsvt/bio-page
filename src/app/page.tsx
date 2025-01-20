@@ -69,8 +69,8 @@ function HeroScrollDemo() {
         }
       >
         <a href="/VETTAS_EMMANOUIL.pdf" target="_blank" className="mx-auto rounded-2xl object-cover h-full object-left-top"><Image
-          src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
-          alt="hero"
+          src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
+          alt="cv image"
           height={720}
           width={1400}
           draggable={false}
@@ -101,12 +101,13 @@ function TimelineDemo() {
             <div className="flex justify-center">
             {/* Evline image */}
             <Image
-              src="/https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/army.png"
-              alt="hero template"
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/army.png`}
+              alt="army image"
               width={500}
               height={500}
               className="rounded-lg object-cover w-60 h-24 mde:h-44 lg:h-24 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] mt-2"
               style={{ objectFit: 'contain' }}
+              unoptimized
             />
             </div>
         </div>
@@ -120,7 +121,7 @@ function TimelineDemo() {
             September - April 2024
           </p>
           <p className="text-white dark:text-white text-lg md:text-sm font-bold mb-4">
-            <a href="https://my-bio-c0760.web.app//evline.png" target="_blank" className="hover:text-blue-500">Evline - Backend Software Engineer & ETL Developer</a>
+            <a href="https://evline.io" target="_blank" className="hover:text-blue-500">Evline - Backend Software Engineer & ETL Developer</a>
           </p>
           <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-6">
             Contributed to server-side development at a Silicon Valley-based company using
@@ -130,8 +131,8 @@ function TimelineDemo() {
             <div className="flex justify-center">
             {/* Evline image */}
             <a target="_blank" href="https://evline.io/"><Image
-              src="/evline.png"
-              alt="hero template"
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/evline.png`}
+              alt="Evline"
               width={500}
               height={500}
               className="rounded-lg object-cover w-60 h-20 mde:h-44 lg:h-30 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] mb-12"
@@ -162,23 +163,23 @@ function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
-              alt="hero template"
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
+              alt="cv image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
               unoptimized
             />
             <Image
-              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
-              alt="feature template"
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
+              alt="cv image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
               unoptimized
             />
             <Image
-              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
               alt="bento template"
               width={500}
               height={500}
@@ -186,7 +187,7 @@ function TimelineDemo() {
               unoptimized
             />
             <Image
-              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
               alt="cards template"
               width={500}
               height={500}
@@ -223,7 +224,7 @@ function TimelineDemo() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
               alt="hero template"
               width={500}
               height={500}
@@ -231,7 +232,7 @@ function TimelineDemo() {
               unoptimized
             />
             <Image
-              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
               alt="feature template"
               width={500}
               height={500}
@@ -239,7 +240,7 @@ function TimelineDemo() {
               unoptimized
             />
             <Image
-              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
               alt="bento template"
               width={500}
               height={500}
@@ -247,7 +248,7 @@ function TimelineDemo() {
               unoptimized
             />
             <Image
-              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
               alt="cards template"
               width={500}
               height={500}
@@ -283,28 +284,28 @@ const people = [
     id: 1,
     name: "Python",
     designation: "",
-    image: "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/python.png",
+    image: "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/python.png",
   },
   {
     id: 2,
     name: "JavaScript",
     designation: "",
     image:
-      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/js.png",
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/js.png",
   },
   {
     id: 3,
     name: "Linux",
     designation: "",
     image:
-      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/linux.png",
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/linux.png",
   },
   {
     id: 4,
     name: "Git & Github",
     designation: "",
     image:
-      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/git.png",
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/git.png",
   },
 ];
  

@@ -171,7 +171,7 @@ function TimelineDemo() {
               unoptimized
             />
             <Image
-              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
+              src={`/images/cv-image.png`}
               alt="cv image"
               width={500}
               height={500}

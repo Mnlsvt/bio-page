@@ -68,14 +68,14 @@ function HeroScrollDemo() {
           </>
         }
       >
-        <a href="/VETTAS_EMMANOUIL.pdf" target="_blank" className="mx-auto rounded-2xl object-cover h-full object-left-top"><Image
+        <Image
           src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/cv-image.png`}
           alt="hero"
           height={720}
           width={1400}
           draggable={false}
           unoptimized
-        /></a>
+        />
       </ContainerScroll>
     </div>
   );

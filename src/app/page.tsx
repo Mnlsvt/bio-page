@@ -74,7 +74,7 @@ function HeroScrollDemo() {
           </>
         }
       >
-        <a href="/VETTAS_EMMANOUIL.pdf" target="_blank" className="mx-auto rounded-2xl object-cover h-full object-left-top"><Image
+        <a href="/cv" className="mx-auto rounded-2xl object-cover h-full object-left-top"><Image
           src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
           alt="cv image"
           height={720}

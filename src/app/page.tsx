@@ -384,7 +384,7 @@ developer, aiming to deliver innovative solutions and contribute effectively to 
 team. For more about my projects, visit my GitHub profile.`;
 
 
-// technologies
+// technologies - tools
 const people = [
   {
     id: 1,
@@ -412,6 +412,34 @@ const people = [
     designation: "",
     image:
       "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/git.png",
+  },
+  {
+    id: 5,
+    name: "React",
+    designation: "",
+    image:
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/react.png",
+  },
+  {
+    id: 6,
+    name: "NodeJS",
+    designation: "",
+    image:
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/nodejs.png",
+  },
+  {
+    id: 7,
+    name: "Google Cloud",
+    designation: "",
+    image:
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/gcloud.jpg",
+  },
+  {
+    id: 8,
+    name: "Firebase",
+    designation: "",
+    image:
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/firebase.png",
   },
 ];
  
@@ -455,7 +483,7 @@ export default function HomePage() {
       <>
       <LampDemo/>
       <TextGenerateEffect duration={0.5} words={generatedWords}/>
-      <p className={`text-white font-bold text-center mt-36 text-black ${toolsTextSize} leading-snug`}>Tools I have used:</p>
+      <p className={`text-white font-bold text-center mt-36 text-black ${toolsTextSize} leading-snug`}>Tools I have experience with:</p>
       <AnimatedTooltipPreview/>
       <TimelineDemo/>
       {/* <AppleCardsCarouselDemo/> */}

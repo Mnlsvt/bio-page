@@ -240,7 +240,7 @@ function TimelineDemo() {
           <p className="text-white dark:text-white text-lg md:text-sm font-bold mb-4">
             <a href="https://techwb.org/">Technology Without Borders - Software Developer Intern</a>
           </p>
-          <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-24">
+          <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-6">
           During the internship, I developed a web application focusing on user-centric
           features and seamless interaction. I also implemented some data extraction and
           manipulation strategies, crucial for integrating and optimizing data flow for an

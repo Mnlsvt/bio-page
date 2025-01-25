@@ -238,7 +238,7 @@ function TimelineDemo() {
             June - September
           </p>
           <p className="text-white dark:text-white text-lg md:text-sm font-bold mb-4">
-            <a href="https://techwb.org/">Technology Without Borders - Software Developer Intern</a>
+            <a href="https://techwb.org/" target="_blank" className="hover:text-blue-500">Technology Without Borders - Software Developer Intern</a>
           </p>
           <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-6">
           During the internship, I developed a web application focusing on user-centric

@@ -13,6 +13,10 @@
           {
             "key": "Access-Control-Allow-Origin",
             "value": "*"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, max-age=0"
           }
         ]
       }

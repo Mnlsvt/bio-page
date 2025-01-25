@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 //import { getAnalytics } from "firebase/analytics";
 
 import React from "react";
+import { useEffect, useState } from "react";
 import { ContainerScroll } from "../components/ui/container-scroll-animation";
 import Image from "next/image";
 
@@ -16,7 +17,9 @@ import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
 
-import { Timeline } from "@/components/ui/timeline";
+import { Timeline } from "../components/ui/timeline";
+
+import { Carousel, Card } from "../components/ui/apple-cards-carousel";
 
 
 const firebaseConfig = {
@@ -32,6 +35,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 //const analytics = getAnalytics(app);
 
+// Lamp Header
 function LampDemo() {
   return (
     <LampContainer>
@@ -52,7 +56,7 @@ function LampDemo() {
 }
 
  
-
+// Tablet CV
 function HeroScrollDemo() {
   return (
     <div className="flex flex-col overflow-hidden">
@@ -81,8 +85,96 @@ function HeroScrollDemo() {
   );
 }
 
+// Projects Carousel
+function AppleCardsCarouselDemo() {
+  const cards = data.map((card, index) => (
+    <Card key={card.src} card={card} index={index} />
+  ));
 
+  return (
+    <div className="w-full h-full py-20">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white dark:text-white font-sans">
+        My Projects.
+      </h2>
+      <Carousel items={cards} />
+    </div>
+  );
+}
+
+const DummyContent = () => {
+  return (
+    <>
+      {[...new Array(3).fill(1)].map((_, index) => {
+        return (
+          <div
+            key={"dummy-content" + index}
+            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+          >
+            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+              <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                The first rule of Apple club is that you boast about Apple club.
+              </span>{" "}
+              Keep a journal, quickly jot down a grocery list, and take amazing
+              class notes. Want to convert those notes to text? No problem.
+              Langotiya jeetu ka mara hua yaar is ready to capture every
+              thought.
+            </p>
+            <Image
+              src="/images/cv-image.png"
+              alt="Macbook mockup from Aceternity UI"
+              height="500"
+              width="500"
+              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+            />
+          </div>
+        );
+      })}
+    </>
+  );
+};
  
+const data = [
+  {
+    category: "Artificial Intelligence",
+    title: "You can do more with AI.",
+    src: "/images/cv-image.png",
+    content: <DummyContent />,
+  },
+  {
+    category: "Productivity",
+    title: "Enhance your productivity.",
+    src: "/images/cv-image.png",
+    content: <DummyContent />,
+  },
+  {
+    category: "Product",
+    title: "Launching the new Apple Vision Pro.",
+    src: "/images/cv-image.png",
+    content: <DummyContent />,
+  },
+ 
+  {
+    category: "Product",
+    title: "Maps for your iPhone 15 Pro Max.",
+    src: "/images/cv-image.png",
+    content: <DummyContent />,
+  },
+  {
+    category: "iOS",
+    title: "Photography just got better.",
+    src: "/images/cv-image.png",
+    content: <DummyContent />,
+  },
+  {
+    category: "Hiring",
+    title: "Hiring for a Staff Software Engineer",
+    src: "/images/cv-image.png",
+    content: <DummyContent />,
+  },
+];
+
+
+// My Timeline 
 function TimelineDemo() {
   const data = [
     {
@@ -156,7 +248,7 @@ function TimelineDemo() {
           </p>
 
 
-          <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-8">
+          {/* <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-8"> 
             Contributed to server-side development at a Silicon Valley-based company using
             Node.js, NestJS, and TypeScript. Aimed to enhance the scalability and efficiency of
             backend systems, supporting robustness and high service performance.
@@ -194,11 +286,11 @@ function TimelineDemo() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
               unoptimized
             />
-          </div>
+          </div>*/}
         </div>
       ),
     },
-    {
+    /*{
       title: "Changelog",
       content: (
         <div>
@@ -258,7 +350,7 @@ function TimelineDemo() {
           </div>
         </div>
       ),
-    },
+    },*/
   ];
   
   return (
@@ -318,14 +410,41 @@ function AnimatedTooltipPreview() {
 }
 
 export default function HomePage() {
+
+    const [toolsTextSize, setToolsTextSize] = useState("text-2xl")
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth < 640) {
+          setToolsTextSize("text-xl")
+          // setMarginRight("mr-12");
+          // setMarginLeft("ml-10");
+        } else if (window.innerWidth < 768) {
+          // setTextSize("text-xl");
+        } else {
+          // setTextSize("text-2xl");
+          // setMarginRight("mr-80");
+        }
+      };
+  
+      // Set initial size and add event listener
+      handleResize();
+      window.addEventListener("resize", handleResize);
+  
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+
   return (
     <div className='bg-slate-950'>
       <>
       <LampDemo/>
       <TextGenerateEffect duration={0.5} words={generatedWords}/>
-      <p className="text-white font-bold text-center mt-36 text-black text-2xl leading-snug ">Tools I have used:</p>
+      <p className={`text-white font-bold text-center mt-36 text-black ${toolsTextSize} leading-snug`}>Tools I have used:</p>
       <AnimatedTooltipPreview/>
       <TimelineDemo/>
+      {/* <AppleCardsCarouselDemo/> */}
       <HeroScrollDemo/>
       {/* <MacbookScrollDemo /> */}
       </>

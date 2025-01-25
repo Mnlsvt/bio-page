@@ -16,16 +16,21 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   const [textSize, setTextSize] = useState("text-2xl");
+  const [marginRight, setMarginRight] = useState("mr-40");
+  const [marginLeft, setMarginLeft] = useState("ml-20");
   let wordsArray = words.split(" ");
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
-        setTextSize("text-m");
+        setTextSize("text-sm");
+        setMarginRight("mr-12");
+        setMarginLeft("ml-10");
       } else if (window.innerWidth < 768) {
         setTextSize("text-xl");
       } else {
         setTextSize("text-2xl");
+        setMarginRight("mr-80");
       }
     };
 
@@ -73,8 +78,8 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold ml-20 mr-80", className)}>
-      <div className="mt-4">
+    <div className={cn(`font-bold ${marginLeft} ${marginRight}`, className)}>
+      <div>
         <div
           className={cn(
             `dark:text-white text-black leading-snug tracking-wide ${textSize}`

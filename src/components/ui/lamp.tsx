@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
@@ -22,6 +23,8 @@ export function LampDemo() {
   );
 }
 
+
+
 export const LampContainer = ({
   children,
   className,
@@ -29,6 +32,30 @@ export const LampContainer = ({
   children: React.ReactNode;
   className?: string;
 }) => {
+  const [lineWidth, setLineWidth] = useState("30rem");
+  const [lightSize, setLightSize] = useState("30rem");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setLineWidth("20rem");
+        setLightSize("10rem");
+      } else if (window.innerWidth < 768) {
+        setLineWidth("20rem");
+      } else {
+        setLineWidth("30rem");
+     }
+    };
+
+  // Set initial size and add event listener
+  handleResize();
+  window.addEventListener("resize", handleResize);
+
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []);
+
   return (
     <div
       className={cn(
@@ -39,7 +66,9 @@ export const LampContainer = ({
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
-          whileInView={{ opacity: 1, width: "30rem" }}
+          // responsive line's width
+
+          whileInView={{ opacity: 1, width: `${lightSize}` }}
           transition={{
             delay: 0.3,
             duration: 0.8,
@@ -55,7 +84,7 @@ export const LampContainer = ({
         </motion.div>
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
-          whileInView={{ opacity: 1, width: "30rem" }}
+          whileInView={{ opacity: 1, width: `${lightSize}` }}
           transition={{
             delay: 0.3,
             duration: 0.8,
@@ -84,12 +113,13 @@ export const LampContainer = ({
         ></motion.div>
         <motion.div
           initial={{ width: "15rem" }}
-          whileInView={{ width: "30rem" }}
+          whileInView={{ width: `${lineWidth}`}}
           transition={{
             delay: 0.3,
             duration: 0.8,
             ease: "easeInOut",
           }}
+          // responsive line
           className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-cyan-400 "
         ></motion.div>
 

@@ -238,7 +238,7 @@ function TimelineDemo() {
             June - September
           </p>
           <p className="text-white dark:text-white text-lg md:text-sm font-bold mb-4">
-            Technology Without Borders - Software Developer Intern
+            <a href="https://techwb.org/">Technology Without Borders - Software Developer Intern</a>
           </p>
           <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-24">
           During the internship, I developed a web application focusing on user-centric
@@ -246,6 +246,18 @@ function TimelineDemo() {
           manipulation strategies, crucial for integrating and optimizing data flow for an
           improved app performance.
           </p>
+          <div className="flex justify-center">
+            {/* TWB image */}
+            <a target="_blank" href="https://techwb.org/"><Image
+              src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/twblogo.png`}
+              alt="Evline"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover w-60 h-20 mde:h-44 lg:h-30 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] mb-12"
+              style={{ objectFit: 'contain' }}
+              unoptimized
+            /></a>
+            </div>
 
 
           {/* <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-8"> 
@@ -390,7 +402,7 @@ const people = [
     name: "Linux",
     designation: "",
     image:
-      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/linux.png",
+      `https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/linux.png`,
   },
   {
     id: 4,

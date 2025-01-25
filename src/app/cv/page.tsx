@@ -44,7 +44,7 @@ export default function HomePage() {
             className={`rounded-xl object-cover h-xl w-xl py-20 ${imageSize}`}
             unoptimized
         />
-        <a href="/VETTAS_EMMANOUIL.pdf" className="flex justify-center text-white text-xl font-bold text-center pb-20">Download PDF file.</a>
+        <a href="/VETTAS_EMMANOUIL.pdf" className="flex justify-center text-white text-xl font-bold text-center pb-20 hover:text-blue-500">Download PDF file.</a>
     </div>
     );
 }

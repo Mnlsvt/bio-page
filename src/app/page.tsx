@@ -401,41 +401,48 @@ const people = [
   },
   {
     id: 3,
+    name: "TypeScript",
+    designation: "",
+    image:
+      "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/typescript.png",
+  },
+  {
+    id: 4,
     name: "Linux",
     designation: "",
     image:
       `https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/linux.png`,
   },
   {
-    id: 4,
+    id: 5,
     name: "Git & Github",
     designation: "",
     image:
       "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/git.png",
   },
   {
-    id: 5,
+    id: 6,
     name: "React",
     designation: "",
     image:
       "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/react.png",
   },
   {
-    id: 6,
+    id: 7,
     name: "NodeJS",
     designation: "",
     image:
       "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/nodejs.png",
   },
   {
-    id: 7,
+    id: 8,
     name: "Google Cloud",
     designation: "",
     image:
       "https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/gcloud.jpg",
   },
   {
-    id: 8,
+    id: 9,
     name: "Firebase",
     designation: "",
     image:

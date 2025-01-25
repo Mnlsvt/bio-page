@@ -1,11 +1,13 @@
 "use client";
-import { initializeApp } from "firebase/app";
-//import { getAnalytics } from "firebase/analytics";
 
 import React from "react";
 import { useEffect, useState } from "react";
+
 import { ContainerScroll } from "../components/ui/container-scroll-animation";
 import Image from "next/image";
+
+import { initializeApp } from "firebase/app";
+//import { getAnalytics } from "firebase/analytics";
 
 import { motion } from "framer-motion";
 import { LampContainer } from "../components/ui/lamp";

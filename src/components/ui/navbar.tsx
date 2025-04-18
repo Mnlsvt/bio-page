@@ -48,7 +48,7 @@ export function Navbar() {
                 alt="Github"
                 width={20}
                 height={20}
-                className="rounded-lg mb-12 mr-12"
+                className="rounded-lg mr-2 bg-white"
                 style={{ objectFit: 'contain' }}
                 unoptimized
               />

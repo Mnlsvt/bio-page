@@ -12,6 +12,7 @@
   "dependencies": {
     "@tabler/icons-react": "^3.28.1",
     "class-variance-authority": "^0.7.1",
+    "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "firebase": "^11.2.0",
     "framer-motion": "^11.18.1",
@@ -19,6 +20,7 @@
     "next": "15.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-intersection-observer": "^9.16.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"
   },

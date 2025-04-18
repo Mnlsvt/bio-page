@@ -6,7 +6,6 @@ import Image from "next/image";
 import "../globals.css";
 
 export default function HomePage() {
-
     const [imageSize, setPaddingLeftRight] = useState("px-60")
 
         useEffect(() => {
@@ -36,6 +35,7 @@ export default function HomePage() {
 
     return (
     <div className='bg-slate-950'>
+        <a href="/"><button className="outline outline-1 outline-white rounded-2xl h-10 w-10 text-white absolute top-5 left-5 hover:text-blue-500 text-4xl">⇦</button></a>
         <Image
             src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
             alt="hero template"

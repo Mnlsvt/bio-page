@@ -41,11 +41,11 @@
       },
       {
         "source": "projects",
-        "destination": "/index.html"
+        "destination": "/projects.html"
       },
       {
         "source": "contact",
-        "destination": "/index.html"
+        "destination": "/contact.html"
       }
     ]
   }

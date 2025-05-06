@@ -395,8 +395,8 @@ export default function HomePage() {
 
   return (
     <div className='bg-slate-950'>
-      <>
       <Navbar/>
+      <div className="pb-10"></div>
       <LampDemo/>
       
       {/* <TextGenerateEffect duration={0.5} words={generatedWords}/> */}
@@ -410,7 +410,6 @@ export default function HomePage() {
       {/* <AppleCardsCarouselDemo/> */}
       <HeroScrollDemo/>
       {/* <MacbookScrollDemo /> */}
-      </>
     </div>
   );
 }

@@ -1,0 +1,277 @@
+[33mcommit ee76f1181badaef0f5e60e89fddc49d9aacb320f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Tue May 6 17:42:05 2025 +0300
+
+    added email abd contact pages. also fixed graphics
+
+[33mcommit ba5fc3980fe4844c968c7cb3fb428e41cf4ae197[m
+Author: MnLsVt <72461719+Mnlsvt@users.noreply.github.com>
+Date:   Fri Apr 25 23:18:23 2025 +0300
+
+    Add files via upload
+
+[33mcommit 3ef93ac9d5f9e6fc96691b977ffca65e57601bc1[m
+Author: MnLsVt <72461719+Mnlsvt@users.noreply.github.com>
+Date:   Fri Apr 25 23:17:46 2025 +0300
+
+    Delete public/images/cv-image.png
+
+[33mcommit 605df10d01f0bea51acd7057d4f4e63782607058[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Fri Apr 18 10:50:53 2025 +0300
+
+    changed navbar spacing
+
+[33mcommit dd98c66d4087ad1403dac821866de89c78851eee[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Fri Apr 18 10:48:04 2025 +0300
+
+    added navbar abd scroll effects
+
+[33mcommit 9657c091f76107989e77b5484fabc2e75b56f0e2[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Fri Apr 18 09:21:42 2025 +0300
+
+    modified cv file and images
+
+[33mcommit acf05bf723008ee4270fc9e3e0a14805bc5b4f27[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Apr 6 19:07:27 2025 +0300
+
+    added cv pdf
+
+[33mcommit df0f5f5330a5535cc11a2d5e0d517c7cf05669a1[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Apr 6 19:03:11 2025 +0300
+
+    updated cv again
+
+[33mcommit b03cb03722a7d9021b799756af28ec223dffe546[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Apr 6 18:58:50 2025 +0300
+
+    updated cv
+
+[33mcommit 9205d4004a072903a05bc151e03e0ad254dc17a2[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Feb 1 13:52:43 2025 +0200
+
+    updated my cv
+
+[33mcommit fea0d8204c23a16479dd745a44ebbccee930e802[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Jan 26 02:19:43 2025 +0200
+
+    fixed tools row issue
+
+[33mcommit 73f151ac1e38deb850c7932286e80c4357c32f6d[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 20:45:19 2025 +0200
+
+    added 1 more tool and hover effect on a textbox
+
+[33mcommit cbbacf7c7531ca8073772582429d35a04e9f42a1[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 20:37:33 2025 +0200
+
+    added more tools in experience
+
+[33mcommit e6d30a259c83b6590563f43100f055ecbcbf1b97[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 20:17:14 2025 +0200
+
+    fixed cv page and page naming
+
+[33mcommit 5785a16e981d1a57cd7a046a7c10d1647069e25f[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 18:43:14 2025 +0200
+
+    added cv page
+
+[33mcommit c501544d1598c60a2a99a87fddd7508cd21abf9a[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 16:44:14 2025 +0200
+
+    fixes
+
+[33mcommit a58559fdcd82f7a4bebc112b4be08f8b3a0ca9bd[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 16:43:28 2025 +0200
+
+    changed a wrong margin
+
+[33mcommit 302a093c5cc3088d12f5ccc2d058b5370f295eab[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 16:40:19 2025 +0200
+
+    added wtb image and urls
+
+[33mcommit 2c579c99c3e2b1c7b1d4ead313d3470c0d482a47[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 12:44:05 2025 +0200
+
+    fixed index.html issue
+
+[33mcommit 464154b26f3e1c5e367109e678736e301a8291f5[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 12:22:18 2025 +0200
+
+    made some changes on firebase
+
+[33mcommit 5f3d59f30f9b476f6741751dacc41eb9555187a2[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 12:12:30 2025 +0200
+
+    removed firebase caching
+
+[33mcommit bc357c1ccc8dd082deb0bb3ce2464b5f719a848c[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 11:41:20 2025 +0200
+
+    updated firebase
+
+[33mcommit 75a518576bba37ea624e45a4c19a2ee454c35641[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 11:34:36 2025 +0200
+
+    removed projects carousel for now
+
+[33mcommit 62a9acea05d679bf6551aab5072b573f521a0631[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sat Jan 25 11:25:59 2025 +0200
+
+    added responsiveness
+
+[33mcommit 5f3b8a7361053a85cd363a0732382b232e946a92[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Mon Jan 20 16:24:23 2025 +0200
+
+    changed images to output and public
+
+[33mcommit 1cd917af582dcf18d1f9fcfd26c12543eb9e9c15[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Mon Jan 20 16:18:51 2025 +0200
+
+    changed images to output and public
+
+[33mcommit c8595c64a1a71f09f0370fb7b02cc0002c6bf420[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Mon Jan 20 13:26:14 2025 +0200
+
+    testing images issue
+
+[33mcommit 197de50e2c85be4b2bf1a00f2683501089d5d2b0[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Mon Jan 20 13:21:24 2025 +0200
+
+    still trying to fix the image issue
+
+[33mcommit 2d3296368ad4c02ac902d7df9352348aa8cc0265[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Mon Jan 20 13:14:42 2025 +0200
+
+    changed image location
+
+[33mcommit 909a2edfc9ce803460b9df5030bfc2599363d4c6[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Mon Jan 20 13:08:46 2025 +0200
+
+    still trying to fix the image issue
+
+[33mcommit 189750e8a4dcbb9a6eb1d377c5806c773818af4f[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Mon Jan 20 13:03:41 2025 +0200
+
+    fixed images issue
+
+[33mcommit cb2153625f5068f9cdfdeda06054d3007e6b9224[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Mon Jan 20 12:57:11 2025 +0200
+
+    fixed images issue
+
+[33mcommit eaa1e5e50157f58bea8fe0ce76cdb89ee04a90ac[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Mon Jan 20 12:51:59 2025 +0200
+
+    fixed images issue
+
+[33mcommit e444de6d2aded0dec8c5ca8b1da6ec415e989c8c[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Mon Jan 20 12:46:53 2025 +0200
+
+    fixed images issue
+
+[33mcommit 11b4eb60de2379b2fc93d3e6d7074d215eb0fa8d[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Jan 19 22:34:49 2025 +0200
+
+    fixed the images problem
+
+[33mcommit 85d3d3b7ef5e9b02d9da7a6bcab51ef5e7e7c01d[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Jan 19 22:30:00 2025 +0200
+
+    trying some deployment fixes
+
+[33mcommit 728effe9652a684ae10555bb51403cbb9217e595[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Jan 19 22:15:58 2025 +0200
+
+    fixed some errors pt3
+
+[33mcommit a0230943c645ca140b4fbcba53af282ac3fa2c7a[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Jan 19 22:15:07 2025 +0200
+
+    fixed some errors pt2
+
+[33mcommit 97d7db1916fc9cabb0e30dd86cedde5ca6bd7ff9[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Jan 19 22:13:50 2025 +0200
+
+    fixed some errors
+
+[33mcommit 3af35f5791149c7712699a20b1a9892668779d9e[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Jan 19 22:05:52 2025 +0200
+
+    testing git deploy
+
+[33mcommit b9833f8ce70d05e8edb3fc3eb15848ebcf91fb7f[m
+Author: MnLsVt <72461719+Mnlsvt@users.noreply.github.com>
+Date:   Sun Jan 19 22:05:23 2025 +0200
+
+    Update firebase-hosting-merge.yml
+    
+    changed the npm run script
+
+[33mcommit c21b319a6fe1a33341df86f429d2b0a30d54c28e[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Jan 19 21:52:42 2025 +0200
+
+    added army photo
+
+[33mcommit a73f42f6faf01222987aa2e5cd8a2656f34f2bfc[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Jan 19 21:45:20 2025 +0200
+
+    added tools and configured env file
+
+[33mcommit 837bd3a1352626018cefcae775a9976277481e51[m
+Author: MnLsVt <manolis277@gmail.com>
+Date:   Sun Jan 19 12:58:59 2025 +0200
+
+    added two tools
+
+[33mcommit d42d8acc935dfa9b9d14e8aa0d4d7c3b650e05b5[m
+Author: MnLsVt <72461719+Mnlsvt@users.noreply.github.com>
+Date:   Sat Jan 18 22:50:24 2025 +0200
+
+    Add files via upload
+
+[33mcommit ef971c4af081e03b179f819c3d39401c0709a1bb[m
+Author: MnLsVt <72461719+Mnlsvt@users.noreply.github.com>
+Date:   Sat Jan 18 22:47:17 2025 +0200
+
+    Initial commit

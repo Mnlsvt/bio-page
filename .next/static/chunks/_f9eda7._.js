@@ -21,7 +21,7 @@ function Interest() {
     const [submitted, setSubmitted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const handleSubmit = async (e)=>{
         e.preventDefault();
-        const res = await fetch('/api/contact', {
+        const res = await fetch('https://formspree.io/f/mnqkwqpr', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ function Interest() {
                     children: "Say hi!"
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/interest.tsx",
-                    lineNumber: 31,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this),
                 !submitted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -55,7 +55,7 @@ function Interest() {
                     children: "Let's get in touch"
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/interest.tsx",
-                    lineNumber: 33,
+                    lineNumber: 36,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-purple-600 font-semibold",
@@ -63,14 +63,14 @@ function Interest() {
                         "Thanks for reaching out! 🎉",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                             fileName: "[project]/src/components/ui/interest.tsx",
-                            lineNumber: 36,
+                            lineNumber: 39,
                             columnNumber: 40
                         }, this),
                         " I will get back to you soon."
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/interest.tsx",
-                    lineNumber: 35,
+                    lineNumber: 38,
                     columnNumber: 11
                 }, this),
                 !submitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -86,7 +86,7 @@ function Interest() {
                             className: "p-3 border rounded-lg text-black"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/interest.tsx",
-                            lineNumber: 41,
+                            lineNumber: 44,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -98,7 +98,7 @@ function Interest() {
                             rows: 4
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/interest.tsx",
-                            lineNumber: 49,
+                            lineNumber: 52,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -107,24 +107,24 @@ function Interest() {
                             children: "Send Message"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/interest.tsx",
-                            lineNumber: 57,
+                            lineNumber: 60,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/interest.tsx",
-                    lineNumber: 40,
+                    lineNumber: 43,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ui/interest.tsx",
-            lineNumber: 30,
+            lineNumber: 33,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/ui/interest.tsx",
-        lineNumber: 29,
+        lineNumber: 32,
         columnNumber: 5
     }, this);
 }

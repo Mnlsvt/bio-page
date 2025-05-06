@@ -10,7 +10,7 @@ export function Interest() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const res = await fetch('https://formspree.io/f/mnqkwqpr', {
+    const res = await fetch('https://formspree.io/f/mqaqqjkk', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

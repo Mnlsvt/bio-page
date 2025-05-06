@@ -8,6 +8,7 @@ import Image from "next/image";
 export function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,21 +38,42 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold text-white hover:text-blue-400 transition">
+      <Link href="/" className="text-xl font-bold text-white hover:text-blue-400 transition">
           Manolis Vettas
         </Link>
-        <ul className="flex space-x-6">
+        <button
+          className="lg:hidden text-white focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <ul
+          className={classNames(
+            'lg:flex lg:space-x-6 lg:static lg:flex-row lg:bg-transparent lg:w-auto lg:items-center transition-all duration-300 ease-in-out overflow-hidden',
+            {
+              'max-h-0 opacity-0 lg:max-h-none lg:opacity-100': !isMenuOpen,
+              'max-h-screen opacity-100': isMenuOpen,
+
+              'absolute top-full left-0 w-full bg-slate-950 flex flex-col space-y-0 p-4 lg:space-y-0 lg:p-0': true,
+            }
+          )}
+        >
           <li>
             <Link href="https://github.com/MnLsVt" className="hover:text-blue-400 transition">
-              <Image
-                src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/github.svg`}
-                alt="Github"
-                width={20}
-                height={20}
-                className="rounded-lg mr-2 bg-white"
-                style={{ objectFit: 'contain' }}
-                unoptimized
-              />
+              Github
             </Link>
           </li>
           <li>

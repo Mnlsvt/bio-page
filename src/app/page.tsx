@@ -55,7 +55,7 @@ function LampDemo() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        Welcome to <br /> Manolis's Page
+        Hi, <span className="text-teal-300">Manolis</span> here <br /> welcome <span className="text-teal-300">:)</span>
       </motion.h1>
     </LampContainer>
   );

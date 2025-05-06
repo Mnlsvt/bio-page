@@ -55,12 +55,12 @@ export function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="#projects" className="hover:text-blue-400 transition">
+            <Link href="/projects" className="hover:text-blue-400 transition">
               Projects
             </Link>
           </li>
           <li>
-            <Link href="#contact" className="hover:text-blue-400 transition">
+            <Link href="/contact" className="hover:text-blue-400 transition">
               Contact
             </Link>
           </li>

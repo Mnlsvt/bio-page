@@ -20,7 +20,8 @@ export function Interest() {
           <form
             action="https://formspree.io/f/mqaqqjkk"
             method="POST"
-            onSubmit={() => setSubmitted(true)}
+            target="hidden_iframe" // 👈 This was missing
+            onSubmit={() => setTimeout(() => setSubmitted(true), 100)}
             className="flex flex-col gap-4"
           >
             <input
@@ -45,6 +46,7 @@ export function Interest() {
             </button>
           </form>
         )}
+        <iframe name="hidden_iframe" style={{ display: 'none' }}></iframe>
       </div>
     </div>
   );

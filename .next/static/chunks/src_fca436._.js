@@ -16,27 +16,7 @@ var _s = __turbopack_refresh__.signature();
 ;
 function Interest() {
     _s();
-    const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
-    const [message, setMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [submitted, setSubmitted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const handleSubmit = async (e)=>{
-        e.preventDefault();
-        const res = await fetch('https://formspree.io/f/mqaqqjkk', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                email,
-                message
-            })
-        });
-        if (res.ok) {
-            setSubmitted(true);
-        } else {
-            alert("Something went wrong. Please try again.");
-        }
-    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen flex flex-col items-center justify-center bg-070F2B",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -47,7 +27,7 @@ function Interest() {
                     children: "Say hi!"
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/interest.tsx",
-                    lineNumber: 34,
+                    lineNumber: 11,
                     columnNumber: 9
                 }, this),
                 !submitted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -55,7 +35,7 @@ function Interest() {
                     children: "Let's get in touch"
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/interest.tsx",
-                    lineNumber: 36,
+                    lineNumber: 13,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-purple-600 font-semibold",
@@ -63,42 +43,42 @@ function Interest() {
                         "Thanks for reaching out! 🎉",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                             fileName: "[project]/src/components/ui/interest.tsx",
-                            lineNumber: 39,
+                            lineNumber: 16,
                             columnNumber: 40
                         }, this),
                         " I will get back to you soon."
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/interest.tsx",
-                    lineNumber: 38,
+                    lineNumber: 15,
                     columnNumber: 11
                 }, this),
                 !submitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                    onSubmit: handleSubmit,
+                    action: "https://formspree.io/f/mqaqqjkk",
+                    method: "POST",
+                    onSubmit: ()=>setSubmitted(true),
                     className: "flex flex-col gap-4",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                             type: "email",
+                            name: "email",
                             placeholder: "Your email",
-                            value: email,
-                            onChange: (e)=>setEmail(e.target.value),
                             required: true,
                             className: "p-3 border rounded-lg text-black"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/interest.tsx",
-                            lineNumber: 44,
+                            lineNumber: 26,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                            name: "message",
                             placeholder: "Your message",
-                            value: message,
-                            onChange: (e)=>setMessage(e.target.value),
                             required: true,
                             className: "p-3 border rounded-lg text-black",
                             rows: 4
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/interest.tsx",
-                            lineNumber: 52,
+                            lineNumber: 33,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -107,28 +87,28 @@ function Interest() {
                             children: "Send Message"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/interest.tsx",
-                            lineNumber: 60,
+                            lineNumber: 40,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/interest.tsx",
-                    lineNumber: 43,
+                    lineNumber: 20,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ui/interest.tsx",
-            lineNumber: 33,
+            lineNumber: 10,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/ui/interest.tsx",
-        lineNumber: 32,
+        lineNumber: 9,
         columnNumber: 5
     }, this);
 }
-_s(Interest, "6HvNm1KPemgMMxSCMbe0WBrdO0c=");
+_s(Interest, "S6ipnhtDax9I0+B/fnlVz3+f6e8=");
 _c = Interest;
 var _c;
 __turbopack_refresh__.register(_c, "Interest");

@@ -3,30 +3,7 @@
 import { useState } from 'react';
 
 export function Interest() {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const res = await fetch('https://formspree.io/f/mqaqqjkk', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email,
-        message,
-      }),
-    });
-
-    if (res.ok) {
-      setSubmitted(true);
-    } else {
-      alert("Something went wrong. Please try again.");
-    }
-  };
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-070F2B">
@@ -40,19 +17,22 @@ export function Interest() {
           </p>
         )}
         {!submitted && (
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <form
+            action="https://formspree.io/f/mqaqqjkk"
+            method="POST"
+            onSubmit={() => setSubmitted(true)}
+            className="flex flex-col gap-4"
+          >
             <input
               type="email"
+              name="email"
               placeholder="Your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
               required
               className="p-3 border rounded-lg text-black"
             />
             <textarea
+              name="message"
               placeholder="Your message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
               required
               className="p-3 border rounded-lg text-black"
               rows={4}

@@ -757,10 +757,6 @@ body {
   top: 1.25rem;
 }
 
-.top-16 {
-  top: 4rem;
-}
-
 .top-full {
   top: 100%;
 }
@@ -1352,18 +1348,6 @@ body {
   gap: 2px;
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -1731,6 +1715,10 @@ body {
   padding: 0 !important;
 }
 
+.p-0 {
+  padding: 0;
+}
+
 .p-1 {
   padding: .25rem;
 }
@@ -1757,10 +1745,6 @@ body {
 
 .p-px {
   padding: 1px;
-}
-
-.p-0 {
-  padding: 0;
 }
 
 .px-4 {
@@ -2046,12 +2030,12 @@ body {
   opacity: .1;
 }
 
-.opacity-50 {
-  opacity: .5;
-}
-
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-50 {
+  opacity: .5;
 }
 
 .shadow {
@@ -2257,10 +2241,6 @@ body {
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
 }
 
-.hover\:opacity-80:hover {
-  opacity: .8;
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid #0000;
   outline-offset: 2px;
@@ -2375,10 +2355,6 @@ body {
 
   .md\:block {
     display: block;
-  }
-
-  .md\:flex {
-    display: flex;
   }
 
   .md\:hidden {

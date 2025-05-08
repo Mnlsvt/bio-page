@@ -2,7 +2,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-
+import { Navbar } from "@/components/ui/navbar";
 import "../globals.css";
 
 export default function HomePage() {
@@ -35,7 +35,8 @@ export default function HomePage() {
 
     return (
     <div className='bg-slate-950'>
-        <a href="/"><button className="outline outline-1 outline-white rounded-2xl h-10 w-10 text-white absolute top-5 left-5 hover:text-blue-500 text-4xl">⇦</button></a>
+        <Navbar/>
+        {/* <a href="/"><button className="outline outline-1 outline-white rounded-2xl h-10 w-10 text-white absolute top-5 left-5 hover:text-blue-500 text-4xl">⇦</button></a> */}
         <Image
             src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
             alt="hero template"
@@ -48,45 +49,3 @@ export default function HomePage() {
     </div>
     );
 }
-
-// "use client";
-// import React, { useState } from "react";
-// import Image from "next/image";
-// import "../globals.css";
-
-// const ImageGallery = () => {
-//   const [activeImage, setActiveImage] = useState<number | null>(null);
-
-//   const images = [
-//     { id: 1, src: `https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`, alt: "CV" }
-//   ];
-
-//   const handleClick = (id: number) => {
-//     setActiveImage(id);
-//   };
-
-//   return (
-//     <div className="relative flex gap-4">
-//       {images.map((image) => (
-//         <div
-//           key={image.id}
-//           className={`relative w-40 h-40 cursor-pointer transition-all duration-300 ${
-//             activeImage === image.id ? "z-10 scale-110" : "z-0"
-//           }`}
-//           onClick={() => handleClick(image.id)}
-//         >
-//           <Image
-//             src={image.src}
-//             alt={image.alt}
-//             layout="fill"
-//             objectFit="cover"
-//             className="rounded-lg centered"
-//             unoptimized
-//           />
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default ImageGallery;

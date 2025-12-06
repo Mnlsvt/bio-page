@@ -184,6 +184,34 @@ function HeroScrollDemo() {
 function TimelineDemo() {
   const data = [
     {
+      title: "2025",
+      content: (
+        <div>
+          <p className="text-white dark:text-white text-xs md:text-xl font-bold mb-8">
+            September 2025 - Present
+          </p>
+          <p className="text-white dark:text-white text-lg md:text-sm font-bold mb-4">
+            <a href="https://www.uu.se/en/study/programme/masters-programme-image-analysis-and-machine-learning" target="_blank" className="hover:text-blue-500">Masters in Image Analysis & Machine Learning</a>
+          </p>
+            <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-6">
+            Started the Master's program in Image Analysis & Machine Learning at Uppsala University.
+            </p>
+            <div className="flex justify-center">
+            {/* Evline image */}
+            <a target="_blank" href="https://www.uu.se/en/study/programme/masters-programme-image-analysis-and-machine-learning"><Image
+              src={`https://www.uu.se/images/200.136686d1187793d565e21e1d/1682407424042/Masterprogram-i-bildanalys-och-maskininl%C3%A4rning.jpg`}
+              alt="masters program image"
+              width={800}
+              height={800}
+              className="rounded-lg object-cover w-60 h-20 mde:h-44 lg:h-30 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] mb-12"
+              style={{ objectFit: 'contain' }}
+              unoptimized
+            /></a>
+            </div>
+        </div>
+      ),
+    },
+    {
       title: "2024",
       content: (
         <div>

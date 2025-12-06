@@ -277,7 +277,7 @@ function TimelineDemo() {
 }
 
  
-const generatedWords = `I am a 24-year-old Software Engineer, with a strong passion for backend
+const generatedWords = `I am a 25-year-old Software Engineer, with a strong passion for backend
 development. My technical expertise includes software development, computer
 networks, big data, and artificial intelligence. I recently completed my thesis project
 which was about a social media app that uses AI for data extraction and the

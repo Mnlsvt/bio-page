@@ -199,7 +199,8 @@ function TimelineDemo() {
             <div className="flex justify-center">
             {/* Evline image */}
             <a target="_blank" href="https://www.uu.se/en/study/programme/masters-programme-image-analysis-and-machine-learning"><Image
-              src={`https://www.uu.se/images/200.136686d1187793d565e21e1d/1682407424042/Masterprogram-i-bildanalys-och-maskininl%C3%A4rning.jpg`}
+              src={`https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHI1MnpjZHppdTNxbzB6Mmhxb2xlOWRieWl0aXVsZXdrNTl1aG51MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DjQZeqf3HqAQBqu45D/giphy.gif`}
+              // src={`https://www.uu.se/images/200.136686d1187793d565e21e1d/1682407424042/Masterprogram-i-bildanalys-och-maskininl%C3%A4rning.jpg`}
               alt="masters program image"
               width={800}
               height={800}

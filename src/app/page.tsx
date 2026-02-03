@@ -72,7 +72,7 @@ function HeroScrollDemo() {
             <h1 className="text-4xl font-semibold text-white dark:text-white mb-10">
               Click below to <br />
               <span className="text-4xl md:text-[4rem] font-bold mt-1 leading-none">
-                Check my CV
+                Check my Resume
               </span>
             </h1>
           </>
@@ -433,8 +433,22 @@ export default function HomePage() {
           {textGenInView && <TextGenerateEffect duration={0.5} words={generatedWords} />}
         </div>
 
-      <p className={`text-white font-bold text-center mt-36 text-black ${toolsTextSize} leading-snug`}>Tools I have experience with:</p>
-      <AnimatedTooltipPreview/>
+      {/* <AnimatedTooltipPreview/> */}
+
+      {/* <p className={`text-white font-bold text-center mt-36 text-black ${toolsTextSize} leading-snug`}>Tools I have experience with:</p> */}
+      
+      {/* Animated tools I have experience with */}
+      <motion.div
+        animate={{ y: [0, -20, 0] }}
+        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+        className="w-full h-full flex flex-col justify-center"
+      >
+        <p className={`text-white font-bold text-center mt-36 text-black ${toolsTextSize} leading-snug`}>
+          Tools I have experience with:
+        </p>
+        <AnimatedTooltipPreview />
+      </motion.div>
+
       <TimelineDemo/>
       {/* <AppleCardsCarouselDemo/> */}
       <HeroScrollDemo/>

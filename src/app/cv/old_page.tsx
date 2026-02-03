@@ -1,0 +1,52 @@
+"use client";
+// bg color: bg-slate-950
+import React from "react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import { Navbar } from "@/components/ui/navbar";
+import "../globals.css";
+
+export default function HomePage() {
+    const [imageSize, setPaddingLeftRight] = useState("px-60")
+
+        useEffect(() => {
+            const handleResize = () => {
+            if (window.innerWidth < 640) {
+                setPaddingLeftRight("pl-10 pr-10")
+                // setMarginRight("mr-12");
+                // setMarginLeft("ml-10");
+            } else if (window.innerWidth < 768) {
+                setPaddingLeftRight("pl-12 pr-12")
+                    // setTextSize("text-xl");
+            } else {
+                // setTextSize("text-2xl");
+                // setMarginRight("mr-80");
+                setPaddingLeftRight("pl-80 pr-80")
+            }
+            };
+        
+            // Set initial size and add event listener
+            handleResize();
+            window.addEventListener("resize", handleResize);
+        
+            return () => {
+            window.removeEventListener("resize", handleResize);
+            };
+        }, []);
+
+    return (
+    <div className='bg-slate-950'>
+        <Navbar/>
+        {/* <a href="/"><button className="outline outline-1 outline-white rounded-2xl h-10 w-10 text-white absolute top-5 left-5 hover:text-blue-500 text-4xl">⇦</button></a> */}
+        <Image
+            src={`https://raw.githubusercontent.com/Mnlsvt/bio-page/main/public/images/cv-image.png`}
+            alt="hero template"
+            width={5000}
+            height={5000}
+            className={`rounded-xl object-cover h-xl w-xl py-20 ${imageSize}`}
+            unoptimized
+        />
+        <a href="/VETTAS_EMMANOUIL.pdf" className="flex justify-center text-white text-xl font-bold text-center pb-20 hover:text-blue-500">Download PDF file.</a>
+    </div>
+    );
+}

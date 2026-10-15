@@ -306,13 +306,11 @@ function TimelineDemo() {
 }
 
  
-const generatedWords = `I am a 25-year-old Software Engineer, with a strong passion for backend
-development. My technical expertise includes software development, computer
-networks, big data, and artificial intelligence. I recently completed my thesis project
-which was about a social media app that uses AI for data extraction and the
-enhancement of user recommendations. I am eager to apply my skills as a backend
-developer, aiming to deliver innovative solutions and contribute effectively to a
-team. For more about my projects, visit my GitHub profile.`;
+const generatedWords = `I am a Software Engineer with a strong interest in Computer Vision and AI, along with some 
+experience in backend development. My technical background includes software development, 
+computer networks, big data, and artificial intelligence. My thesis project involved developing 
+a social media application that uses AI for data extraction and improved user recommendations. I also 
+enjoy exploring cybersecurity, experimenting with different security concepts, and learning about other areas of technology :)`;
 
 
 // technologies - tools
